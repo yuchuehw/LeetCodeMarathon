@@ -9,4 +9,7 @@ class Solution:
                     tower[i+1][j] += over/2
                     tower[i+1][j+1] += over/2
                     row[j] = 1
-        return tower[query_row][query_glass]
+                if i==query_row and j==query_glass:
+                    return tower[query_row][query_glass]
+        return 0
+        
